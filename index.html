@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hotel Management System</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f2f2f2;
+}
+
+header{
+    background:#0d6efd;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+nav{
+    background:#333;
+    display:flex;
+    justify-content:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:15px 20px;
+}
+
+nav a:hover{
+    background:#0d6efd;
+}
+
+.container{
+    width:90%;
+    margin:30px auto;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 3px 10px rgba(0,0,0,.2);
+}
+
+.card h2{
+    color:#0d6efd;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:30px;
+    font-weight:bold;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:40px;
+    background:white;
+}
+
+table th,table td{
+    border:1px solid #ddd;
+    padding:12px;
+    text-align:center;
+}
+
+table th{
+    background:#0d6efd;
+    color:white;
+}
+
+footer{
+    margin-top:40px;
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<header>
+    <h1>🏨 Sakura Hotel</h1>
+    <p>Hotel Management System</p>
+</header>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Rooms</a>
+<a href="#">Customers</a>
+<a href="#">Booking</a>
+<a href="#">Staff</a>
+<a href="#">Reports</a>
+</nav>
+
+<div class="container">
+
+<div class="cards">
+
+<div class="card">
+<h2>🛏 Rooms</h2>
+<p>50</p>
+</div>
+
+<div class="card">
+<h2>👤 Customers</h2>
+<p>120</p>
+</div>
+
+<div class="card">
+<h2>📅 Bookings</h2>
+<p>85</p>
+</div>
+
+<div class="card">
+<h2>💰 Revenue</h2>
+<p>¥450,000</p>
+</div>
+
+</div>
+
+<table>
+
+<tr>
+<th>Room No</th>
+<th>Customer</th>
+<th>Check In</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>101</td>
+<td>Prabin</td>
+<td>2026-07-13</td>
+<td>Occupied</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td>Sita</td>
+<td>2026-07-13</td>
+<td>Available</td>
+</tr>
+
+<tr>
+<td>103</td>
+<td>Ram</td>
+<td>2026-07-14</td>
+<td>Reserved</td>
+</tr>
+
+<tr>
+<td>104</td>
+<td>Hari</td>
+<td>2026-07-15</td>
+<td>Occupied</td>
+</tr>
+
+</table>
+
+</div>
+
+<footer>
+© 2026 Hotel Management System
+<footer>
+    <p>📞 Contact: +81-90-1234-5678</p>
+    <p>📧 Email: info@sakurahotel.com</p>
+    <p>📍 Tokyo, Japan</p>
+    <p>© 2026 Sakura Hotel</p>
+</footer>
+</footer>
+
+</body>
+</html>
