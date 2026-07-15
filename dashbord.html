@@ -1,231 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>Sakura Hotel Dashboard</title>
+    <meta charset="UTF-8">
+    <title>Sakura Hotel Dashboard</title>
 
-<style>
-body{
-    font-family:Arial,sans-serif;
-    margin:0;
-    background:#f2f2f2;
-}
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f2f2f2;
+        }
 
-header{
-    background:#0d6efd;
-    color:white;
-    padding:20px;
-    text-align:center;
-}
+        header {
+            background: #0d6efd;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
 
-nav{
-    background:#333;
-    text-align:center;
-}
+        nav {
+            background: #333;
+            text-align: center;
+        }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    padding:15px 20px;
-    display:inline-block;
-}
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: inline-block;
+        }
 
-nav a:hover{
-    background:#0d6efd;
-}
+        nav a:hover {
+            background: #0d6efd;
+        }
 
-.container{
-    width:90%;
-    margin:30px auto;
-}
+        .container {
+            width: 90%;
+            margin: 30px auto;
+        }
 
-.cards{
-    display:flex;
-    gap:20px;
-    flex-wrap:wrap;
-}
+        .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
 
-.card{
-    background:white;
-    flex:1;
-    min-width:200px;
-    padding:20px;
-    border-radius:10px;
-    text-align:center;
-    box-shadow:0 3px 10px rgba(0,0,0,.2);
-}
+        .card {
+            background: white;
+            flex: 1;
+            min-width: 200px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+        }
 
-table{
-    width:100%;
-    margin-top:30px;
-    border-collapse:collapse;
-    background:white;
-}
+        table {
+            width: 100%;
+            margin-top: 30px;
+            border-collapse: collapse;
+            background: white;
+        }
 
-th,td{
-    border:1px solid #ddd;
-    padding:12px;
-    text-align:center;
-}
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
 
-th{
-    background:#0d6efd;
-    color:white;
-}
+        th {
+            background: #0d6efd;
+            color: white;
+        }
 
-footer{
-    background:#333;
-    color:white;
-    text-align:center;
-    padding:15px;
-    margin-top:30px;
-}
-</style>
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
 
 </head>
+
 <body>
 
-<header>
-<h1>🏨 Sakura Hotel</h1>
-<p>Hotel Management System</p>
-</header>
+    <header>
+        <h1>🏨 Sakura Hotel</h1>
+        <p>Hotel Management System</p>
+    </header>
 
-<nav>
-<a href="#">Home</a>
-<a href="#">Rooms</a>
-<a href="#">Customers</a>
-<a href="#">Booking</a>
-<a href="#">Staff</a>
-<a href="#">Reports</a>
-</nav>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Rooms</a>
+        <a href="#">Customers</a>
+        <a href="#">Booking</a>
+        <a href="#">Staff</a>
+        <a href="#">Reports</a>
+    </nav>
 
-<div class="container">
+    <div class="container">
 
-<div class="cards">
+        <div class="cards">
+
+            <div class="card">
+                <h2>🛏 Rooms</h2>
+                <h1>50</h1>
+            </div>
+
+            <div class="card">
+                <h2>👤 Customers</h2>
+                <h1>120</h1>
+            </div>
+
+            <div class="card">
+                <h2>📅 Bookings</h2>
+                <h1>85</h1>
+            </div>
+
+            <div class="card">
+                <h2>💰 Revenue</h2>
+                <h1>¥450,000</h1>
+            </div>
+
+        </div>
+
+        <table>
+            <tr>
+                <th>Room No</th>
+                <th>Customer</th>
+                <th>Check In</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>101</td>
+                <td>Prabin</td>
+                <td>2026-07-13</td>
+                <td>Occupied</td>
+            </tr>
+
+            <tr>
+                <td>102</td>
+                <td>Sita</td>
+                <td>2026-07-13</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>103</td>
+                <td>Ram</td>
+                <td>2026-07-14</td>
+                <td>Reserved</td>
+            </tr>
+
+            <tr>
+                <td>104</td>
+                <td>Hari</td>
+                <td>2026-07-15</td>
+                <td>Occupied</td>
+            </tr>
+
+        </table>
+        <header>
+
+            <img src="img/hotel-room.png" width="90" height="90" style="border-radius:50%;">
+
+            <h1>🏨 Sakura Hotel</h1>
+            <p>Hotel Management System</p>
+
+        </header>
+    </div>
+    <div class="card">
+
+        <h2>📅 Bookings</h2>
+        <h2 style="text-align:center;">🛏 Room Price List</h2>
+
+        <table>
+
+            <tr>
+                <th>Room Type</th>
+                <th>Room No</th>
+                <th>Price / Day</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>Single Room</td>
+                <td>101</td>
+                <td>¥10,000</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>Double Room</td>
+                <td>102</td>
+                <td>¥15,000</td>
+                <td>Occupied</td>
+            </tr>
+
+            <tr>
+                <td>Deluxe Room</td>
+                <td>103</td>
+                <td>¥25,000</td>
+                <td>Reserved</td>
+            </tr>
+
+            <tr>
+                <td>Suite Room</td>
+                <td>104</td>
+                <td>¥40,000</td>
+                <td>Available</td>
+            </tr>
+
+        </table>
+        <h1>85</h1>
+        <h2 style="text-align:center;">🛏 Room Booking</h2>
 
 <div class="card">
-<h2>🛏 Rooms</h2>
-<h1>50</h1>
-</div>
 
-<div class="card">
-<h2>👤 Customers</h2>
-<h1>120</h1>
-</div>
+<form>
 
-<div class="card">
-<h2>📅 Bookings</h2>
-<h1>85</h1>
-</div>
+<label>Customer Name:</label><br>
+<input type="text" placeholder="Enter Name"><br><br>
 
-<div class="card">
-<h2>💰 Revenue</h2>
-<h1>¥450,000</h1>
-</div>
 
-</div>
+<label>Phone Number:</label><br>
+<input type="text" placeholder="Phone Number"><br><br>
 
-<table>
-<tr>
-<th>Room No</th>
-<th>Customer</th>
-<th>Check In</th>
-<th>Status</th>
-</tr>
 
-<tr>
-<td>101</td>
-<td>Prabin</td>
-<td>2026-07-13</td>
-<td>Occupied</td>
-</tr>
+<label>Select Room:</label><br>
+<select>
+<option>Single Room - ¥10,000</option>
+<option>Double Room - ¥15,000</option>
+<option>Deluxe Room - ¥25,000</option>
+<option>Suite Room - ¥40,000</option>
+</select>
+<br><br>
 
-<tr>
-<td>102</td>
-<td>Sita</td>
-<td>2026-07-13</td>
-<td>Available</td>
-</tr>
 
-<tr>
-<td>103</td>
-<td>Ram</td>
-<td>2026-07-14</td>
-<td>Reserved</td>
-</tr>
+<label>Check In:</label><br>
+<input type="date"><br><br>
 
-<tr>
-<td>104</td>
-<td>Hari</td>
-<td>2026-07-15</td>
-<td>Occupied</td>
-</tr>
 
-</table>
-<header>
+<label>Check Out:</label><br>
+<input type="date"><br><br>
 
-<img src="logo.png" width="90" height="90" style="border-radius:50%;">
 
-<h1>🏨 Sakura Hotel</h1>
-<p>Hotel Management System</p>
+<button type="submit">
+Confirm Booking
+</button>
 
-</header>
-</div>
-<div class="card">
-
-<h2>📅 Bookings</h2>
-<h2 style="text-align:center;">🛏 Room Price List</h2>
-
-<table>
-
-<tr>
-<th>Room Type</th>
-<th>Room No</th>
-<th>Price / Day</th>
-<th>Status</th>
-</tr>
-
-<tr>
-<td>Single Room</td>
-<td>101</td>
-<td>¥10,000</td>
-<td>Available</td>
-</tr>
-
-<tr>
-<td>Double Room</td>
-<td>102</td>
-<td>¥15,000</td>
-<td>Occupied</td>
-</tr>
-
-<tr>
-<td>Deluxe Room</td>
-<td>103</td>
-<td>¥25,000</td>
-<td>Reserved</td>
-</tr>
-
-<tr>
-<td>Suite Room</td>
-<td>104</td>
-<td>¥40,000</td>
-<td>Available</td>
-</tr>
-
-</table>
-<h1>85</h1>
-
-<button>View Booking</button>
+</form>
 
 </div>
 
-<footer>
-<p>📞 +81-90-1234-5678</p>
-<p>📧 info@sakurahotel.com</p>
-<p>📍 Tokyo, Japan</p>
-<p>© 2026 Sakura Hotel</p>
-</footer>
+        <button>View Booking</button>
+
+    </div>
+
+    <footer>
+        <p>📞 +81-90-1234-5678</p>
+        <p>📧 info@sakurahotel.com</p>
+        <p>📍 Tokyo, Japan</p>
+        <p>© 2026 Sakura Hotel</p>
+    </footer>
 
 </body>
+
 </html>

@@ -1,12 +1,110 @@
-button{
-    background:#0d6efd;
+body{
+    font-family:'Poppins',Arial,sans-serif;
+    margin:0;
+    background:#fff5f8;
+}
+
+header{
+    background:linear-gradient(135deg,#d63384,#ff85b3);
     color:white;
+    padding:25px;
+    text-align:center;
+}
+
+.logo{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    border:4px solid white;
+}
+
+nav{
+    background:#333;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:15px 20px;
+    display:inline-block;
+}
+
+nav a:hover{
+    background:#d63384;
+}
+
+.container{
+    width:90%;
+    margin:30px auto;
+}
+
+.cards{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    flex:1;
+    min-width:220px;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+button{
+    background:#d63384;
+    color:white;
+    padding:12px 25px;
     border:none;
-    padding:10px 20px;
-    border-radius:5px;
+    border-radius:25px;
     cursor:pointer;
 }
 
 button:hover{
-    background:#084298;
+    background:#a61e5c;
+}
+
+table{
+    width:100%;
+    margin-top:30px;
+    border-collapse:collapse;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+th{
+    background:#d63384;
+    color:white;
+    padding:15px;
+}
+
+td{
+    border:1px solid #ddd;
+    padding:12px;
+    text-align:center;
+}
+
+footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
 }
