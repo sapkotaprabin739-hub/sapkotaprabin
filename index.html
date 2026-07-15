@@ -1,224 +1,15 @@
-<!DOCTYPE html>
+
+    l<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hotel Management System</title>
+<title>Sakura Hotel Login</title>
 
 <style>
-*{
+body{
     margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
-
-body{
-    background:#f2f2f2;
-}
-
-header{
+    font-family:Arial;
     background:#0d6efd;
-    color:white;
-    padding:20px;
-    text-align:center;
-}
-
-nav{
-    background:#333;
-    display:flex;
-    justify-content:center;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    padding:15px 20px;
-}
-
-nav a:hover{
-    background:#0d6efd;
-}
-
-.container{
-    width:90%;
-    margin:30px auto;
-}
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-}
-
-.card{
-    background:white;
-    border-radius:10px;
-    padding:25px;
-    text-align:center;
-    box-shadow:0 3px 10px rgba(0,0,0,.2);
-}
-
-.card h2{
-    color:#0d6efd;
-    margin-bottom:10px;
-}
-
-.card p{
-    font-size:30px;
-    font-weight:bold;
-}
-
-table{
-    width:100%;
-    border-collapse:collapse;
-    margin-top:40px;
-    background:white;
-}
-
-table th,table td{
-    border:1px solid #ddd;
-    padding:12px;
-    text-align:center;
-}
-
-table th{
-    background:#0d6efd;
-    color:white;
-}
-
-footer{
-    margin-top:40px;
-    background:#333;
-    color:white;
-    text-align:center;
-    padding:15px;
-}
-</style>
-
-</head>
-
-<body>
-
-<header>
-<header>
-    <h1>🏨 Sakura Hotel</h1>
-    <p>Hotel Management System</p>
-</header>
-</header>
-
-<nav>
-<a href="#">Home</a>
-<a href="#">Rooms</a>
-<a href="#">Customers</a>
-<a href="#">Booking</a>
-<a href="#">Staff</a>
-<a href="#">Reports</a>
-</nav>
-
-<div class="container">
-
-<div class="cards">
-
-<div class="card">
-<h2>🛏 Rooms</h2>
-<p>50</p>
-</div>
-
-<div class="card">
-<h2>👤 Customers</h2>
-<p>120</p>
-</div>
-
-<div class="card">
-<h2>📅 Bookings</h2>
-<p>85</p>
-</div>
-
-<div class="card">
-<h2>💰 Revenue</h2>
-<p>¥450,000</p>
-</div>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Login</title>
-</head>
-<body>
-
-<h2>Hotel Login</h2>
-
-<input type="text" id="username" placeholder="Username"><br><br>
-<input type="password" id="password" placeholder="Password"><br><br>
-
-<button onclick="login()">Login</button>
-
-<script>
-function login() {
-    let user = document.getElementById("username").value;
-    let pass = document.getElementById("password").value;
-
-    if(user === "admin" && pass === "1234"){
-        alert("Login Successful");
-        window.location.href = "dashboard.html";
-    } else {
-        alert("Invalid Username or Password");
-    }
-}
-</script>
-
-</body>
-</html>
-</div>
-
-<table>
-
-<tr>
-<th>Room No</th>
-<th>Customer</th>
-<th>Check In</th>
-<th>Status</th>
-</tr>
-
-<tr>
-<td>101</td>
-<td>Prabin</td>
-<td>2026-07-13</td>
-<td>Occupied</td>
-</tr>
-
-<tr>
-<td>102</td>
-<td>Sita</td>
-<td>2026-07-13</td>
-<td>Available</td>
-</tr>
-
-<tr>
-<td>103</td>
-<td>Ram</td>
-<td>2026-07-14</td>
-<td>Reserved</td>
-</tr>
-
-<tr>
-<td>104</td>
-<td>Hari</td>
-<td>2026-07-15</td>
-<td>Occupied</td>
-</tr>
-
-</table>
-<header>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Hotel Login</title>
-<style>
-body{
-    font-family: Arial, sans-serif;
-    background:#1e73ff;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -227,86 +18,73 @@ body{
 
 .login-box{
     background:white;
+    width:350px;
     padding:30px;
     border-radius:10px;
-    width:300px;
+    box-shadow:0 0 20px rgba(0,0,0,.3);
     text-align:center;
-    box-shadow:0 5px 15px rgba(0,0,0,.3);
 }
 
 input{
-    width:90%;
-    padding:10px;
+    width:100%;
+    padding:12px;
     margin:10px 0;
+    box-sizing:border-box;
 }
 
 button{
-    width:95%;
-    padding:10px;
-    background:#1e73ff;
+    width:100%;
+    padding:12px;
+    background:#0d6efd;
     color:white;
     border:none;
     cursor:pointer;
-    font-size:16px;
+    font-size:18px;
 }
 
 button:hover{
-    background:#0056d2;
+    background:#084298;
 }
 </style>
-</head>
 
+</head>
 <body>
 
 <div class="login-box">
-    <h2>🏨 Sakura Hotel</h2>
 
-    <input type="text" id="username" placeholder="Username">
+<h1>🏨 Sakura Hotel</h1>
 
-    <input type="password" id="password" placeholder="Password">
+<h3>Hotel Management System</h3>
 
-    <button onclick="login()">Login</button>
+<input type="text" id="username" placeholder="Username">
+
+<input type="password" id="password" placeholder="Password">
+
+<button onclick="login()">Login</button>
+
 </div>
 
 <script>
+
 function login(){
 
-    let username = document.getElementById("username").value;
-    let password = document.getElementById("password").value;
+let username=document.getElementById("username").value.trim();
 
-    if(username === "admin" && password === "1234"){
-        alert("Login Successful!");
-        window.location.href = "dashboard.html";
-    }else{
-        alert("Wrong Username or Password!");
-    }
+let password=document.getElementById("password").value.trim();
+
+if(username==="admin" && password==="1234"){
+
+window.location.href="dashboard.html";
+
+}else{
+
+alert("Wrong Username or Password");
 
 }
+
+}
+
 </script>
 
-</body>
-</html>
-</header>
-
-</div>
-
-<footer>
-© 2026 Hotel Management System
-<footer>
-    <p>📞 Contact: +81-90-1234-5678</p>
-    <p>📧 Email: info@sakurahotel.com</p>
-    <p>📍 Tokyo, Japan</p>
-    <p>© 2026 Sakura Hotel</p>
-</footer>
-</footer>
-<header>
-    <div class="logo">
-        <img src="images/logo.png" alt="Hotel Logo">
-        <div>
-            <h1>Sakura Hotel</h1>
-            <p>Hotel Management System</p>
-        </div>
-    </div>
-</header>
 </body>
 </html>
