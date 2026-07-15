@@ -1,7 +1,8 @@
 <script>
 function login() {
-    let username = document.getElementById("username").value.trim();
-    let password = document.getElementById("password").value.trim();
+
+    var username = document.getElementById("username").value.trim();
+    var password = document.getElementById("password").value.trim();
 
     if (username === "admin" && password === "1234") {
         alert("Login Successful!");
@@ -9,5 +10,6 @@ function login() {
     } else {
         alert("Wrong Username or Password!");
     }
+
 }
 </script>
