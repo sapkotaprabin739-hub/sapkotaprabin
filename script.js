@@ -1,15 +1,9 @@
-<script>
-function login() {
+alert("This website was created as a school assignment.");
 
-    var username = document.getElementById("username").value.trim();
-    var password = document.getElementById("password").value.trim();
+ 
 
-    if (username === "admin" && password === "1234") {
-        alert("Login Successful!");
-        window.location.href = "dashboard.html";
-    } else {
-        alert("Wrong Username or Password!");
-    }
+このサイトは学校の課題で制作しました
 
-}
-</script>
+
+
+
